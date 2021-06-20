@@ -2,7 +2,6 @@ let preQuery = ""; // 上一次搜索的内容
 let wrapDom = document.getElementById("search_zone"); // 搜索区域的dom元素
 
 function searchFn(dom, query) {
-  console.log(dom, query);
   let wrap = wrapDom || document.querySelector(dom);
   let innerHTML = wrap.innerHTML;
   if (!preQuery) {
