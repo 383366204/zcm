@@ -7,7 +7,7 @@ body{
 	background-color: #fffff5;
 }
 .input-group {
-	margin-top:40px;
+	margin-top:28px;
 }
 
 .widget-title{
@@ -32,7 +32,7 @@ body{
 	left:0px;
 	top:0px;
 	width:100%;
-	background: rgba(255,216,191,0.9);
+	background: rgba(116, 197, 218, 0.9);
 	z-index:9999;
 }
 
@@ -73,7 +73,7 @@ body{
 	position:relative;
   	right:0px;
 	display:inline-block;
-	margin:32px 0 0 0;
+	margin: 20px 0 0 0;
 	color:white;
 	font-size:16px;
 	font-weight:700;
