@@ -825,8 +825,8 @@ width: 30%;
 
 
 ul.li_check li {
-    background:url(http://hav1007bxv0n.smartrelease.jp/wordpress/wp-content/uploads/2020/11/li_check.png) left no-repeat !important;
-    text-indent:36px;
+    background:url('./images/li_check.png') 0 8px no-repeat !important;
+    padding: 0 30px;
     list-style: none;
     line-height: 30px;
     font-size: 100%;

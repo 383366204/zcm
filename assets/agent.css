@@ -1,10 +1,7 @@
 body{
-  font-family:'游ゴシック', "Meiryo", "Osaka", sans-serif;
   overflow-x:hidden;
 }
 .container { padding-bottom:0px; position:relative; }
-.romaji { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
-.serif { font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;}
 
 .animated {
   -webkit-transition: all 1.5s;
@@ -141,7 +138,7 @@ a:hover { text-decoration:none; }
 .dateandcate i, .styled_post_list2 p.date i { margin-right:.25em; }
 .dateandcate span:first-child { padding-right:8px; }
 .dateandcate span:nth-child(2) { border-left:1px solid #222; padding-left:12px; }
-.dateandcate .date, .styled_post_list2 p.date { font-family:Arial,sans-serif; font-size:14px; font-weight:bold; line-height:1.2; }
+.dateandcate .date, .styled_post_list2 p.date { font-size:14px; font-weight:bold; line-height:1.2; }
 @media screen and (max-width: 479px) {
  .dateandcate .date, .styled_post_list2 p.date { font-size:12px; }
  .styled_post_list2 .title { min-height:6em; }
@@ -808,7 +805,6 @@ a:hover .arrow_ico2, a:focus .arrow_ico2, a:active .arrow_ico2 {
 
 .headline, .headline2, .section h1, .recruit-splash h1, .section h2 {
   margin:0;
-  font-family: "Droid Sans", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   color:#000; 
   font-size: 48px;
   line-height: 180%;
@@ -817,7 +813,6 @@ a:hover .arrow_ico2, a:focus .arrow_ico2, a:active .arrow_ico2 {
 .headline2 { display:block; line-height:140%; letter-spacing:-.02em; } 
 .section-two-h3 {
   margin:80px 0 0 !important;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 48px;
   line-height: 180%;
   font-weight: 700;
@@ -1345,7 +1340,6 @@ a:hover .arrow_ico2, a:focus .arrow_ico2, a:active .arrow_ico2 {
 */
 .section h2.recruit-splash-h2 {
   margin:0;
-  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   font-size: 48px;
   line-height: 180%;
   font-weight: 700;
@@ -1726,7 +1720,6 @@ a:hover .arrow_ico2, a:focus .arrow_ico2, a:active .arrow_ico2 {
 [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
-    speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
