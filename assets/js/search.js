@@ -2,29 +2,39 @@ let preQuery = ""; // 上一次搜索的内容
 let wrapDom = document.getElementById("search_zone"); // 搜索区域的dom元素
 
 function searchFn(dom, query) {
+  console.log(dom, query);
   let wrap = wrapDom || document.querySelector(dom);
   let innerHTML = wrap.innerHTML;
   if (!preQuery) {
     let preReg = new RegExp(
-      '<span style="color: #000; background-color: #e3e4e5">' +
-        preQuery +
-        "</span>",
-      "g"
+      '<span style="color: #000; background-color: #FF9632">' +
+      preQuery +
+      "</span>"
     );
     innerHTML = innerHTML.replace(preReg, preQuery);
   }
   if (query) {
     query = scriptFilter(query);
-    let reg = new RegExp(query, "g");
+    let reg = new RegExp(query);
     innerHTML = innerHTML.replace(
       reg,
-      '<span style="color: #000; background-color: #e3e4e5">' +
-        query +
-        "</span>"
+      '<span id="search_result" style="color: #000; background-color: #FF9632">' +
+      query +
+      "</span>"
     );
   }
   wrap.innerHTML = innerHTML;
   preQuery = query;
+
+  let targetElement = document.getElementById('search_result')
+  let scrollHeight = targetElement.getBoundingClientRect().top + window.scrollY - 200;
+
+  window.scroll({
+    top: scrollHeight,
+    behavior: 'smooth'
+  });
+
+  bindSearch();
 }
 
 function scriptFilter(s) {
@@ -38,6 +48,18 @@ function scriptFilter(s) {
   return rs;
 }
 
-document.getElementById("search_btn").addEventListener("click", function () {
-  searchFn(void 0, document.getElementById("search_input").value);
-});
+function bindSearch() {
+  let searchBtn = document.getElementById("search_btn")
+
+  searchBtn.removeEventListener("click", function () {
+    console.log('remove');
+  });
+
+  searchBtn.addEventListener("click", function () {
+    let searchInput = document.getElementById("search_input");
+
+    searchFn(void 0, searchInput.value);
+  })
+}
+
+bindSearch();
