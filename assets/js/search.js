@@ -2,12 +2,11 @@ let preQuery = ""; // 上一次搜索的内容
 let wrapDom = document.getElementById("search_zone"); // 搜索区域的dom元素
 
 function searchFn(dom, query) {
-  console.log(dom, query);
   let wrap = wrapDom || document.querySelector(dom);
   let innerHTML = wrap.innerHTML;
   if (!preQuery) {
     let preReg = new RegExp(
-      '<span style="color: #000; background-color: #FF9632">' +
+      '<span>' +
       preQuery +
       "</span>"
     );
@@ -18,7 +17,7 @@ function searchFn(dom, query) {
     let reg = new RegExp(query);
     innerHTML = innerHTML.replace(
       reg,
-      '<span id="search_result" style="color: #000; background-color: #FF9632">' +
+      '<span id="search_result">' +
       query +
       "</span>"
     );
