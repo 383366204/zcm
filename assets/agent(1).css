@@ -568,9 +568,7 @@ input[name="tab_item"] {
 .su-column iframe,
 .su-column object,
 .su-column embed { max-width: 100%; }
-@media only screen {
-	[class*="su-column"] + [class*="su-column"]:last-child { float: right; }
-}
+
 .su-column-size-1-1 { width: 100%; }
 .su-column-size-1-2 { width: 48%; }
 .su-column-size-1-3 { width: 30.66%; }
