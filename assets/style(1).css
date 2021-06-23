@@ -575,6 +575,11 @@ border-bottom:none !important;
 padding:0 !important;
 }
 
+h4.or.big{
+  font-size: 145% !important; 
+  margin-bottom: 5px !important;
+}
+
 h4.pu {
 color:#5F4876;
 font-size: 120% !important; 
