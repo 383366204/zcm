@@ -178,7 +178,6 @@ body{
 }
 
 .footer-menu .navbar-nav > li {
-	/* list-style-image: url(images/google.png); */
 	float: none;
 	display: inline-block;
 	color:#333333;
